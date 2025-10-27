@@ -1,4 +1,3 @@
-import Dashboard from "../../pages/Dashboard";
 import Header from "./Header";
 import Sidemenu from "./Sidemenu";
 
