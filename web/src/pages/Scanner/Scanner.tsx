@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BrowserMultiFormatReader } from "@zxing/library";
 import { useNavigate } from "react-router-dom";
 import { useScan } from "../../services/ScannerContext/ScanContext";
@@ -42,6 +42,8 @@ const Scan = () => {
         setLastScan(code);
         reader.reset(); // stop reading
         navigate("/"); // back to dashboard
+      } else {
+        console.error(err);
       }
       // ignore NotFoundException errors
     });
