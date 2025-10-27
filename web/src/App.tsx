@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BarcodeScanner from "./components/BarcodeScanner/BarcodeScanner";
 import Layout from "./components/Layout/Layout";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/Login";
