@@ -16,10 +16,10 @@ const Scan = () => {
         const videoDevices = await reader.listVideoInputDevices();
         if (videoDevices.length > 0) {
             console.log(videoDevices);
-            if (videoDevices[0]) {
-                setVideoDevice(videoDevices[0]);
-            } else {
+            if (videoDevices[1]) {
                 setVideoDevice(videoDevices[1]);
+            } else {
+                setVideoDevice(videoDevices[0]);
             }
         } else {
           console.error("No camera devices found");
